@@ -6,7 +6,7 @@
 
 int main (){
 
-    FILE * Tabela = LerDados("tabela.csv");
+    Time * Tabela = LerDados("tabela.csv");
     for (int i = 0; i < 20; i++)
     printf("%d\t%.2f\t%s\n", Tabela[i].Pos, Tabela[i].Aproveitamento, Tabela[i].Equipe);
 
