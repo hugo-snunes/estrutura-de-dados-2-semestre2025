@@ -22,6 +22,8 @@ typedef struct {
 
 Time * LerDados(char * NomeArquivo); //retornar vetor da equipe
 
+void InsertionSort(int * V, int N);
+
 int getPontos(Time * T, int Pos);
 
 float getAproveitamento(Time * T, char * Nome);

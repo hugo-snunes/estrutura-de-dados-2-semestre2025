@@ -36,6 +36,29 @@ return X;
 
 }
 
+void InsertionSort(int * V, int N){
+
+    Time Chave; // Elemento que será inserido na parte ordenada
+    int i; // Posição (ou coordenada) do elemento chave
+    int j; //Posição de elemento da "parte ordenada" que será comparada com chave
+
+    for(i = 1; i < N; i++) {
+
+        Chave = V[i];
+        j = i - 1;
+
+        
+
+        while (j >= 0 && strcmp([j].Nome, Chave.Nome) > 0) {
+            V[j + 1] = V[j];
+            j--;
+        }
+
+        V[j + 1] = Chave; // Copiando no último lugar modificado
+    }
+
+}
+
 int getPontos(Time * T, int Pos){
     int i;
 
