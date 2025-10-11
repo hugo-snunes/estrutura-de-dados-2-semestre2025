@@ -1,4 +1,0 @@
-Arroz 2 2.50
-Feijao 3 3.00
-Carne 1 15.75
-Leite 4 2.50

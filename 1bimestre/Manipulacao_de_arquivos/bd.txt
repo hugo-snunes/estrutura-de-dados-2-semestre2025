@@ -1,5 +1,0 @@
-    12 1200.0 Andre
-    34 800.00 Jose
-    56 -200.0 Lucas
-    69 300.0 Pedro Eduardo
-
