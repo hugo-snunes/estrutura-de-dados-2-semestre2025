@@ -35,10 +35,9 @@ int main(int argc, char* argv[]) {
         printf("%s\n", Planner->Dados[i].Titulo);
     }
 
-    GerarHTMLTabela(Planner, "output/Tabelatarefas.html");
+    GerarHTMLTabela(Planner, "planner.html");
 
-    DestruirLista(Planner);
-
-    printf("%X\n", Planner);
+    //DestruirLista(Planner);
+    //printf("%X\n", Planner);
 
 }
