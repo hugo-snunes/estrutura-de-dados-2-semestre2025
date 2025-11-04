@@ -31,7 +31,6 @@ typedef struct {
 Lista * CriarLista(int C);
 void DestruirLista(Lista * L);
 void AdicionarTarefa(Lista * L, Tarefa T);
-
 void GerarHTMLTabela(Lista *Lista, char *CaminhoArquivo);
 
 #endif

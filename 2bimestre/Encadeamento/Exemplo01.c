@@ -4,22 +4,26 @@
 // Definindo a estrutura de um ITEM da lista ENCADEADA
 
 typedef struct Item {
+    
     int Chave;
     struct Item * Proximo;
+
 } Item;
 
-// Bloco Principal
+// Bloco principal
 
 int main() {
 
-    Item * I = (Item *) malloc(sizeof(Item));
+    Item * I = (Item *) malloc (sizeof(Item));
 
     I->Chave = 23;
     I->Proximo = NULL;
 
     // Alguns testes (printf's)
 
-    printf("Endereco (hexadecimal): %X\n", I);
+    printf("Endereço (hexadecimal): %X\n", I);
     printf("%d\n", I->Chave);
-    printf("%d(NULL)\n", I->Proximo);
+    printf("%X (NULL)\n", I->Proximo);
+
+
 }

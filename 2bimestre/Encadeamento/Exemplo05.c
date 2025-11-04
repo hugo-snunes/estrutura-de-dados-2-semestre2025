@@ -4,11 +4,13 @@
 // Definindo a estrutura de um ITEM da lista ENCADEADA
 
 typedef struct Item {
+    
     int Chave;
     struct Item * Proximo;
+
 } Item;
 
-// Bloco Principal
+// Bloco principal
 
 int main() {
 
@@ -25,7 +27,7 @@ int main() {
     A->Proximo = NULL;
     B->Proximo = NULL;
     C->Proximo = NULL;
-    D->Proximo = NULL;
+    D->Proximo = NULL; 
 
     // Alguns testes (printf's)
 
@@ -34,7 +36,7 @@ int main() {
     printf("%X \t %d\n", C, C->Chave);
     printf("%X \t %d\n", D, D->Chave);
 
-    // Construindo o encadeamento (LISTA) A, C, B, D
+    // Construindo o encadeamento (LISTA) A, B, C, D
 
     A->Proximo = B;
     B->Proximo = C;
@@ -42,22 +44,16 @@ int main() {
 
     // Percorrer a lista (visitar todos os nós da lista)
 
-    Item * X = A;
-    printf("%X \t %d\n", X, X->Chave); // 17
-
-    X = X->Proximo;
-    printf("%X \t %d\n", X, X->Chave); // 29
-
-    X = X->Proximo;
-    printf("%X \t %d\n", X, X->Chave); // 41
-
-    X = X->Proximo;
-    printf("%X \t %d\n", X, X->Chave); // 97
-
-    X = X->Proximo;
-    if (X == NULL) printf("Final da lista!!!");
-
-
-
+    printf("\nLista:\n\n");
 
     
+
+    for( Item * X = A; X != NULL; X = X->Proximo) {
+        printf("%X \t %d\n", X, X->Chave);
+    }
+
+
+
+
+
+}
